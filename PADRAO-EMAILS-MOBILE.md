@@ -56,24 +56,31 @@ Outlook (que ignora `max-width`):
 Assim o e-mail **cabe na tela mesmo quando a media query é ignorada** — o que
 elimina o zoom-out que encolhia o texto.
 
-### 2. Tamanhos mínimos de fonte
+### 2. Tamanhos de fonte — defina o INLINE já no mínimo
 
-| Elemento                     | Desktop | **Mobile (mín.)** |
-|------------------------------|:-------:|:-----------------:|
-| Título / H1                  | 28px    | **26px**          |
-| Corpo de texto               | 16px    | **18px**          |
-| Texto de apoio (cards)       | 15px    | **17px**          |
-| Linha de oferta (destaque)   | 20px    | **22px**          |
-| Botões (CTA)                 | 15–16px | **17px**          |
-| Rótulos / eyebrow (CAIXA ALTA)| 11–12px| **13px**          |
-| Faixa de benefícios (topo)   | 12px    | **14px**          |
-| Selos de confiança           | 13px    | **14px**          |
-| P.S.                         | 14px    | **16px**          |
-| Rodapé (texto/link)          | 12–13px | **14px**          |
-| Rodapé (letra miúda / LGPD)  | 11px    | **13px**          |
+⚠️ Como o app do Gmail ignora o `<style>` (ver seção abaixo), **o tamanho que
+vale no celular é o `font-size` INLINE.** Por isso a coluna abaixo é o valor que
+deve ir **direto no `style` inline** de cada elemento — não conte com a media
+query para chegar nele. A media query pode repetir o mesmo valor (ou um pouco
+maior) como reforço nos clientes que a suportam.
 
-> Regra de ouro: **corpo de texto nunca abaixo de 17px no celular.**
-> Textos abaixo de 16px também disparam zoom automático em alguns clientes.
+| Elemento                       | Tamanho mínimo (inline) |
+|--------------------------------|:-----------------------:|
+| Título / H1                    | 26–28px                 |
+| Corpo de texto                 | **17px**                |
+| Texto de apoio (cards)         | **16px**                |
+| Linha de oferta (destaque)     | 22px                    |
+| Botões (CTA principais)        | 16px                    |
+| Rótulos / eyebrow (CAIXA ALTA) | **13px**                |
+| Faixa de benefícios (topo)     | **14px**                |
+| Selos de confiança             | 15px                    |
+| P.S.                           | 16px                    |
+| Rodapé (texto/link)            | **14px**                |
+| Rodapé (letra miúda / LGPD)    | **13px**                |
+
+> Regra de ouro: **nada de texto abaixo de 13px**, e **corpo nunca abaixo de
+> 17px** — no inline, porque é o que o Gmail app usa. (Fontes < 16px ainda
+> podem disparar zoom automático em alguns clientes.)
 
 ### 3. Media query que **aumenta** as fontes
 
@@ -94,7 +101,6 @@ ignorada o texto continua aceitável (e o container fluido garante que cabe).
   .text-eyebrow { font-size: 13px !important; }
   .text-bar     { font-size: 14px !important; line-height: 20px !important; }
   .text-ps      { font-size: 16px !important; line-height: 24px !important; }
-  .text-selos   { font-size: 14px !important; line-height: 22px !important; }
   .text-footer       { font-size: 14px !important; line-height: 22px !important; }
   .text-footer-fine  { font-size: 13px !important; line-height: 20px !important; }
   .btn-link          { font-size: 17px !important; }
@@ -156,6 +162,35 @@ intencional, e dá mais destaque a cada atributo.
 
 ---
 
+## Outras blindagens (tudo inline / estrutura)
+
+Itens que também **não podem depender do `<style>`**:
+
+- **Preheader (texto de prévia):** logo após `<body>`, um bloco oculto controla
+  o trecho que aparece na inbox:
+  `<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#EFEAF1;opacity:0;">Sua chamada de prévia &zwnj;&nbsp;&zwnj;&nbsp;…</div>`
+  (repita `&zwnj;&nbsp;` para impedir que o texto seguinte vaze para a prévia).
+- **Fundos coloridos no Outlook:** em todo `<td>` com cor de fundo, repita a cor
+  no atributo `bgcolor` além do `background-color` inline — ex.: faixa roxa,
+  rodapé verde, células de botão, barrinha de acento. Evita "texto branco sobre
+  branco" se o Outlook descartar o CSS.
+- **Contraste (WCAG AA ≥ 4,5:1):** texto sobre fundo colorido precisa de contraste
+  real. Sobre o verde-escuro `#02403B` use `#9FC0BB` (evite tons como `#6B938E`,
+  ~3,4:1); rótulos vermelhos sobre o fundo claro `#FFF4F4` precisam ser escuros
+  (ex.: `#C0353B`, e não `#D8565B` ~3,6:1).
+- **Listas em linha que quebram (faixa de benefícios):** para manter numa linha
+  no desktop e quebrar só entre itens no mobile, envolva cada item em
+  `<span style="white-space:nowrap">…</span>` — assim nunca quebra no meio de
+  "Frete grátis acima de R$399".
+- **Descadastro (LGPD):** garanta o link de descadastro do RD no rodapé. O RD
+  costuma injetar automaticamente; quando possível, inclua o campo/variável de
+  unsubscribe do RD no próprio HTML para a conformidade ficar auditável.
+- **Claims regulados:** evite promessas absolutas de proteção/resultado (ex.:
+  "protegido… sem preocupação") e termos técnicos não comprovados — além de
+  risco regulatório (ANVISA/CDC), expressões exageradas pesam no filtro de spam.
+
+---
+
 ## Como aplicar à série inteira
 
 Para cada e-mail da série:
@@ -164,8 +199,8 @@ Para cada e-mail da série:
    (regra 1).
 2. Em cada texto, **adicione a classe** correspondente da tabela acima
    (`text-body`, `text-card`, `text-eyebrow`, etc.).
-3. Confirme que os tamanhos inline respeitam os mínimos de **desktop** da
-   tabela (suba os que estiverem abaixo).
+3. Confirme que os tamanhos **inline** já estão no mínimo da tabela acima
+   (é o que o Gmail app usa); suba os que estiverem abaixo.
 4. Copie o bloco `@media` da regra 3 para o `<style>` do `<head>`.
 
 O arquivo [`emails/oleo-reparador.html`](emails/oleo-reparador.html) já é o

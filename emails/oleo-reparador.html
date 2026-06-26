@@ -109,12 +109,6 @@
           line-height: 24px !important;
         }
 
-        /* Selos de confiança */
-        .text-selos {
-          font-size: 14px !important;
-          line-height: 22px !important;
-        }
-
         /* Rodapé */
         .text-footer {
           font-size: 14px !important;
@@ -135,6 +129,12 @@
   </head>
 
   <body style="margin:0; padding:0; background-color:#EFEAF1; font-family: Arial, Helvetica, sans-serif;">
+
+    <!-- Preheader oculto: controla o texto de prévia na caixa de entrada -->
+    <div style="display:none; max-height:0; overflow:hidden; mso-hide:all; font-size:1px; line-height:1px; color:#EFEAF1; opacity:0;">
+      Seu Óleo Reparador rende mais do que parece — veja como aproveitar cada gota e seu cashback de 10%.
+      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
 
     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#EFEAF1;">
       <tr>
@@ -163,11 +163,11 @@
 
             <!-- FAIXA DE BENEFÍCIOS (barra de confiança no topo) -->
             <tr>
-              <td style="background-color:#771B8C; padding:11px 20px;">
+              <td bgcolor="#771B8C" style="background-color:#771B8C; padding:11px 20px;">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                   <tr>
-                    <td align="center" class="text-bar" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; letter-spacing:0.3px; line-height:18px;">
-                      10% de cashback &nbsp;·&nbsp; Frete grátis acima de R$399 &nbsp;·&nbsp; 5% no Pix
+                    <td align="center" class="text-bar" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#FFFFFF; letter-spacing:0.3px; line-height:20px;">
+                      <span style="white-space:nowrap;">10% de cashback</span> &nbsp;·&nbsp; <span style="white-space:nowrap;">Frete grátis acima de R$399</span> &nbsp;·&nbsp; <span style="white-space:nowrap;">5% no Pix</span>
                     </td>
                   </tr>
                 </table>
@@ -177,7 +177,7 @@
             <!-- ====== HERO: Título ====== -->
             <tr>
               <td style="padding:32px 40px 8px 40px;" class="mobile-padding">
-                <p class="text-eyebrow" style="margin:0 0 8px 0; font-family:Arial, Helvetica, sans-serif; font-size:12px; letter-spacing:2px; color:#77530C; text-transform:uppercase; font-weight:bold;">
+                <p class="text-eyebrow" style="margin:0 0 8px 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; letter-spacing:2px; color:#77530C; text-transform:uppercase; font-weight:bold;">
                   Obrigada por escolher Amor Crescido
                 </p>
                 <h1 class="hero-h1" style="margin:0 0 4px 0; font-family:Arial, Helvetica, sans-serif; font-size:28px; line-height:36px; color:#771B8C; font-weight:bold;">
@@ -196,7 +196,7 @@
             </tr>
             <tr>
               <td style="padding:20px 40px 8px 40px;" class="mobile-padding">
-                <p class="text-body" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#3D3D3D;">
+                <p class="text-body" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:17px; line-height:27px; color:#3D3D3D;">
                   Parabéns por escolher o Óleo Reparador Amor Crescido! Esse pequeno frasco concentra seis óleos vegetais selecionados especialmente para cuidar dos seus fios desde a primeira aplicação. Experimente e sinta cada gota atuando intensamente a favor da beleza e saúde do seu cabelo.
                 </p>
               </td>
@@ -207,7 +207,7 @@
               <td align="center" style="padding:20px 40px 8px 40px;" class="mobile-padding">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td style="background-color:#771B8C; border-radius:6px;">
+                    <td bgcolor="#771B8C" style="background-color:#771B8C; border-radius:6px;">
                       <a href="https://www.nyatabrasil.com.br/oleo-reparador/oleo-reparador-amor-crescido-60ml-blend-de-oleos" target="_blank" class="btn-link" style="display:inline-block; padding:15px 40px; font-family:Arial, Helvetica, sans-serif; font-size:16px; letter-spacing:0.5px; color:#FFFFFF; text-decoration:none; font-weight:bold;">
                         Ver meu Óleo Reparador
                       </a>
@@ -220,7 +220,7 @@
             <!-- ====== USO CORRETO ====== -->
             <tr>
               <td style="padding:16px 40px 8px 40px;" class="mobile-padding">
-                <p class="text-body" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#3D3D3D;">
+                <p class="text-body" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:17px; line-height:27px; color:#3D3D3D;">
                   Se algum dia um óleo deixou seus cabelos pesados, não foi culpa sua — foi falta das informações certas. E com Amor Crescido isso muda: basta aplicar uma pequena quantidade nos fios limpos, pentear e finalizar do seu jeito favorito. Comece com poucas gotas, veja a diferença e ajuste para alcançar o resultado perfeito. Simples, prático e sem mistérios!
                 </p>
               </td>
@@ -231,13 +231,13 @@
               <td style="padding:12px 40px 12px 40px;" class="mobile-padding">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#F7F2F9; border-radius:8px;">
                   <tr>
-                    <td width="4" style="background-color:#8DC542;"></td>
+                    <td width="4" bgcolor="#8DC542" style="background-color:#8DC542;"></td>
                     <td style="padding:18px 24px;">
-                      <p class="text-eyebrow" style="margin:0 0 8px 0; font-family:Arial, Helvetica, sans-serif; font-size:12px; letter-spacing:1px; color:#77530C; text-transform:uppercase; font-weight:bold;">
+                      <p class="text-eyebrow" style="margin:0 0 8px 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; letter-spacing:1px; color:#77530C; text-transform:uppercase; font-weight:bold;">
                         Seis óleos dentro do frasco
                       </p>
-                      <p class="text-card" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:25px; color:#3D3D3D;">
-                        Amêndoa-Doce, Alecrim, Açaí, Coco, Argan e Baru — uma potente castanha do Cerrado brasileiro. E mais: seu cabelo estará protegido com nosso filtro solar UVB, essencial para enfrentar a exposição diária sem preocupação.
+                      <p class="text-card" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#3D3D3D;">
+                        Amêndoa-Doce, Alecrim, Açaí, Coco, Argan e Baru — uma potente castanha do Cerrado brasileiro. E ainda conta com filtro UV, que ajuda a proteger os fios da ação do sol no dia a dia.
                       </p>
                     </td>
                   </tr>
@@ -251,10 +251,10 @@
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#FFF4F4; border:1px solid #FACED0; border-radius:8px;">
                   <tr>
                     <td style="padding:22px 24px;">
-                      <p class="text-eyebrow" style="margin:0 0 4px 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; letter-spacing:1px; color:#D8565B; text-transform:uppercase; font-weight:bold;">
+                      <p class="text-eyebrow" style="margin:0 0 4px 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; letter-spacing:1px; color:#C0353B; text-transform:uppercase; font-weight:bold;">
                         Você já tem crédito esperando
                       </p>
-                      <p class="text-offer" style="margin:0 0 16px 0; font-family:Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; color:#771B8C; font-weight:bold;">
+                      <p class="text-offer" style="margin:0 0 16px 0; font-family:Arial, Helvetica, sans-serif; font-size:22px; line-height:28px; color:#771B8C; font-weight:bold;">
                         10% de cashback na próxima compra
                       </p>
                       <!-- Foto Manteiga centralizada + texto largura cheia -->
@@ -268,7 +268,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <p class="text-card" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:24px; color:#3D3D3D;">
+                            <p class="text-card" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:25px; color:#3D3D3D;">
                               Aproveite para experimentar a <strong>Manteiga Nutritiva</strong>: ela é a aliada ideal do seu óleo e vai acelerar a recuperação das pontas, potencializando ainda mais os benefícios. Não perca a chance de oferecer o melhor para seus cabelos!
                             </p>
                           </td>
@@ -285,7 +285,7 @@
               <td align="center" style="padding:24px 40px 10px 40px;" class="mobile-padding">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td style="background-color:#771B8C; border-radius:6px;">
+                    <td bgcolor="#771B8C" style="background-color:#771B8C; border-radius:6px;">
                       <a href="https://www.nyatabrasil.com.br/mascaras/manteiga-nutritiva-amor-crescido-500g" target="_blank" class="btn-link" style="display:inline-block; padding:16px 44px; font-family:Arial, Helvetica, sans-serif; font-size:16px; letter-spacing:0.5px; color:#FFFFFF; text-decoration:none; font-weight:bold;">
                         Conhecer a Manteiga Nutritiva
                       </a>
@@ -298,7 +298,7 @@
             <!-- P.S. -->
             <tr>
               <td align="center" style="padding:0 40px 28px 40px;" class="mobile-padding">
-                <p class="text-ps" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:22px; color:#77530C; font-style:italic;">
+                <p class="text-ps" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:24px; color:#77530C; font-style:italic;">
                   P.S.: acima de R$399, o frete é grátis pra todo o Brasil.
                 </p>
               </td>
@@ -336,24 +336,28 @@
 
             <!-- ====== RODAPÉ INSTITUCIONAL ====== -->
             <tr>
-              <td align="center" style="background-color:#02403B; padding:32px 40px;" class="mobile-padding">
+              <td align="center" bgcolor="#02403B" style="background-color:#02403B; padding:32px 40px;" class="mobile-padding">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                   <tr>
                     <td align="center">
                       <img src="https://email-editor-production.s3.amazonaws.com/images/866171/Logotipos/branco_Prancheta%201.png" width="150" alt="Nyata Brasil" style="display:block; width:150px; max-width:150px; height:auto; margin:0 auto 16px auto;">
-                      <p class="text-footer" style="margin:0 0 16px 0; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:20px; color:#9FC0BB;"><a href="https://www.nyatabrasil.com.br" target="_blank" style="color:#9FC0BB; text-decoration:underline;">Loja oficial das marcas Nyata Cosméticos, Feluce e Nyaliss Beauty</a></p>
+                      <p class="text-footer" style="margin:0 0 16px 0; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:22px; color:#9FC0BB;"><a href="https://www.nyatabrasil.com.br" target="_blank" style="color:#9FC0BB; text-decoration:underline;">Loja oficial das marcas Nyata Cosméticos, Feluce e Nyaliss Beauty</a></p>
                       <!-- Fale conosco (WhatsApp) -->
                       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto 18px auto;">
                         <tr>
                           <td style="border:1px solid #9FC0BB; border-radius:6px;">
-                            <a href="https://wa.me/5511984560647" target="_blank" class="text-footer" style="display:inline-block; padding:11px 28px; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; text-decoration:none; font-weight:bold; letter-spacing:0.5px;">
+                            <a href="https://wa.me/5511984560647" target="_blank" class="text-footer" style="display:inline-block; padding:12px 30px; font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#FFFFFF; text-decoration:none; font-weight:bold; letter-spacing:0.5px;">
                               Fale conosco
                             </a>
                           </td>
                         </tr>
                       </table>
-                      <div style="border-top:1px solid #0A5852; width:60%; margin:0 auto 14px auto;"></div>
-                      <p class="text-footer-fine" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#6B938E; line-height:18px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="60%" style="width:60%; margin:0 auto 14px auto;">
+                        <tr>
+                          <td style="border-top:1px solid #0A5852; font-size:0; line-height:0;">&nbsp;</td>
+                        </tr>
+                      </table>
+                      <p class="text-footer-fine" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#9FC0BB; line-height:20px;">
                         Você recebeu este e-mail porque comprou na loja Nyata Brasil.<br>Seus dados são tratados conforme a LGPD.
                       </p>
                     </td>
