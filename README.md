@@ -38,8 +38,15 @@ Pasta: [`emails/recompra-oleo-reparador-amor-crescido/`](emails/recompra-oleo-re
 - [`nyata-email-12-reativacao-oleo.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-12-reativacao-oleo.html)
   — E-mail 12 · Reativação (Óleo).
 
-> Próximas levas (ex.: recompra do Shampoo Amor Crescido) entram em pastas
-> próprias dentro de `emails/`, seguindo o mesmo padrão.
+### Leva 2 — Recompra do Shampoo (linha Amor Crescido)
+
+Pasta: [`emails/recompra-shampoo-amor-crescido/`](emails/recompra-shampoo-amor-crescido/) — em construção, mesmo padrão:
+
+- [`nyata-email-01-boas-vindas-shampoo.html`](emails/recompra-shampoo-amor-crescido/nyata-email-01-boas-vindas-shampoo.html)
+  — E-mail 01 · Boas-vindas e como usar (Shampoo).
+
+> Cada nova leva entra em sua própria pasta dentro de `emails/`, seguindo o
+> mesmo padrão (ver `PADRAO-EMAILS-MOBILE.md`).
 
 ## Resumo do problema corrigido
 
