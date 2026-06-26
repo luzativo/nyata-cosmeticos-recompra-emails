@@ -18,6 +18,8 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
     — E-mail 04 · Prova social e identidade.
   - [`nyata-email-05-rotina-completa-kit.html`](emails/nyata-email-05-rotina-completa-kit.html)
     — E-mail 05 · Rotina completa (Kit).
+  - [`nyata-email-06-vegana-low-no-poo.html`](emails/nyata-email-06-vegana-low-no-poo.html)
+    — E-mail 06 · Vegana e Low/No Poo.
 
 ## Resumo do problema corrigido
 
