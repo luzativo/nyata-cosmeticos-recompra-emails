@@ -182,9 +182,14 @@ Itens que também **não podem depender do `<style>`**:
   no desktop e quebrar só entre itens no mobile, envolva cada item em
   `<span style="white-space:nowrap">…</span>` — assim nunca quebra no meio de
   "Frete grátis acima de R$399".
-- **Descadastro (LGPD):** garanta o link de descadastro do RD no rodapé. O RD
-  costuma injetar automaticamente; quando possível, inclua o campo/variável de
-  unsubscribe do RD no próprio HTML para a conformidade ficar auditável.
+- **Barra de acento em blocos de destaque:** não use `border-left` numa `<table>`
+  (o Outlook/Word não renderiza de forma confiável). Use uma célula estrutural
+  antes do conteúdo — `<td width="4" bgcolor="#COR" style="background-color:#COR;"></td>`
+  — como a barrinha verde do bloco "Seis óleos" do E-mail 01. Renderiza em todos
+  os clientes.
+- **Descadastro (LGPD):** o RD Marketing da Nyata **já injeta o link de descadastro
+  automaticamente** no envio — não é preciso (nem desejável) inserir um link manual
+  no HTML.
 - **Claims regulados:** evite promessas absolutas de proteção/resultado (ex.:
   "protegido… sem preocupação") e termos técnicos não comprovados — além de
   risco regulatório (ANVISA/CDC), expressões exageradas pesam no filtro de spam.
