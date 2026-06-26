@@ -30,6 +30,8 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
     — E-mail 10 · Cronograma capilar.
   - [`nyata-email-11-escuta-e-comunidade.html`](emails/nyata-email-11-escuta-e-comunidade.html)
     — E-mail 11 · Escuta e comunidade (sem venda).
+  - [`nyata-email-12-reativacao-oleo.html`](emails/nyata-email-12-reativacao-oleo.html)
+    — E-mail 12 · Reativação (Óleo).
 
 ## Resumo do problema corrigido
 
