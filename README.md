@@ -16,6 +16,8 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
     — E-mail 03 · Cross-sell Manteiga Nutritiva.
   - [`nyata-email-04-prova-social-e-identidade.html`](emails/nyata-email-04-prova-social-e-identidade.html)
     — E-mail 04 · Prova social e identidade.
+  - [`nyata-email-05-rotina-completa-kit.html`](emails/nyata-email-05-rotina-completa-kit.html)
+    — E-mail 05 · Rotina completa (Kit).
 
 ## Resumo do problema corrigido
 
