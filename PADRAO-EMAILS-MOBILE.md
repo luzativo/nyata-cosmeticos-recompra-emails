@@ -208,7 +208,7 @@ Para cada e-mail da série:
    (é o que o Gmail app usa); suba os que estiverem abaixo.
 4. Copie o bloco `@media` da regra 3 para o `<style>` do `<head>`.
 
-O arquivo [`emails/nyata-email-01-boas-vindas-oleo-reparador.html`](emails/nyata-email-01-boas-vindas-oleo-reparador.html)
+O arquivo [`emails/recompra-oleo-reparador-amor-crescido/nyata-email-01-boas-vindas-oleo-reparador.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-01-boas-vindas-oleo-reparador.html)
 já é o **modelo de referência** com tudo aplicado — use-o como base.
 
 ---

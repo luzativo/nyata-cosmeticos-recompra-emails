@@ -7,31 +7,39 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
 - **[`PADRAO-EMAILS-MOBILE.md`](PADRAO-EMAILS-MOBILE.md)** — padrão de
   legibilidade no celular. Explica por que a fonte ficava pequena no mobile e
   define os tamanhos mínimos e a estrutura HTML a seguir em todos os e-mails.
-- **E-mails da série** (em `emails/`), todos no padrão:
-  - [`nyata-email-01-boas-vindas-oleo-reparador.html`](emails/nyata-email-01-boas-vindas-oleo-reparador.html)
-    — E-mail 01 · Boas-vindas Óleo Reparador (modelo de referência).
-  - [`nyata-email-02-passo-antes-do-oleo-manteiga.html`](emails/nyata-email-02-passo-antes-do-oleo-manteiga.html)
-    — E-mail 02 · Passo antes do óleo (Manteiga).
-  - [`nyata-email-03-cross-sell-manteiga-nutritiva.html`](emails/nyata-email-03-cross-sell-manteiga-nutritiva.html)
-    — E-mail 03 · Cross-sell Manteiga Nutritiva.
-  - [`nyata-email-04-prova-social-e-identidade.html`](emails/nyata-email-04-prova-social-e-identidade.html)
-    — E-mail 04 · Prova social e identidade.
-  - [`nyata-email-05-rotina-completa-kit.html`](emails/nyata-email-05-rotina-completa-kit.html)
-    — E-mail 05 · Rotina completa (Kit).
-  - [`nyata-email-06-vegana-low-no-poo.html`](emails/nyata-email-06-vegana-low-no-poo.html)
-    — E-mail 06 · Vegana e Low/No Poo.
-  - [`nyata-email-07-recompra-ciclo-oleo.html`](emails/nyata-email-07-recompra-ciclo-oleo.html)
-    — E-mail 07 · Recompra ciclo (Óleo).
-  - [`nyata-email-08-recompra-fechamento-oleo.html`](emails/nyata-email-08-recompra-fechamento-oleo.html)
-    — E-mail 08 · Recompra fechamento (Óleo).
-  - [`nyata-email-09-cross-sell-leave-in.html`](emails/nyata-email-09-cross-sell-leave-in.html)
-    — E-mail 09 · Cross-sell Leave-in Defrizante.
-  - [`nyata-email-10-cronograma-capilar.html`](emails/nyata-email-10-cronograma-capilar.html)
-    — E-mail 10 · Cronograma capilar.
-  - [`nyata-email-11-escuta-e-comunidade.html`](emails/nyata-email-11-escuta-e-comunidade.html)
-    — E-mail 11 · Escuta e comunidade (sem venda).
-  - [`nyata-email-12-reativacao-oleo.html`](emails/nyata-email-12-reativacao-oleo.html)
-    — E-mail 12 · Reativação (Óleo).
+As campanhas ficam em `emails/`, cada leva em sua própria pasta.
+
+### Leva 1 — Recompra do Óleo Reparador (linha Amor Crescido)
+
+Pasta: [`emails/recompra-oleo-reparador-amor-crescido/`](emails/recompra-oleo-reparador-amor-crescido/) — 12 e-mails, todos no padrão:
+
+- [`nyata-email-01-boas-vindas-oleo-reparador.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-01-boas-vindas-oleo-reparador.html)
+  — E-mail 01 · Boas-vindas Óleo Reparador (modelo de referência).
+- [`nyata-email-02-passo-antes-do-oleo-manteiga.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-02-passo-antes-do-oleo-manteiga.html)
+  — E-mail 02 · Passo antes do óleo (Manteiga).
+- [`nyata-email-03-cross-sell-manteiga-nutritiva.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-03-cross-sell-manteiga-nutritiva.html)
+  — E-mail 03 · Cross-sell Manteiga Nutritiva.
+- [`nyata-email-04-prova-social-e-identidade.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-04-prova-social-e-identidade.html)
+  — E-mail 04 · Prova social e identidade.
+- [`nyata-email-05-rotina-completa-kit.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-05-rotina-completa-kit.html)
+  — E-mail 05 · Rotina completa (Kit).
+- [`nyata-email-06-vegana-low-no-poo.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-06-vegana-low-no-poo.html)
+  — E-mail 06 · Vegana e Low/No Poo.
+- [`nyata-email-07-recompra-ciclo-oleo.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-07-recompra-ciclo-oleo.html)
+  — E-mail 07 · Recompra ciclo (Óleo).
+- [`nyata-email-08-recompra-fechamento-oleo.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-08-recompra-fechamento-oleo.html)
+  — E-mail 08 · Recompra fechamento (Óleo).
+- [`nyata-email-09-cross-sell-leave-in.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-09-cross-sell-leave-in.html)
+  — E-mail 09 · Cross-sell Leave-in Defrizante.
+- [`nyata-email-10-cronograma-capilar.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-10-cronograma-capilar.html)
+  — E-mail 10 · Cronograma capilar.
+- [`nyata-email-11-escuta-e-comunidade.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-11-escuta-e-comunidade.html)
+  — E-mail 11 · Escuta e comunidade (sem venda).
+- [`nyata-email-12-reativacao-oleo.html`](emails/recompra-oleo-reparador-amor-crescido/nyata-email-12-reativacao-oleo.html)
+  — E-mail 12 · Reativação (Óleo).
+
+> Próximas levas (ex.: recompra do Shampoo Amor Crescido) entram em pastas
+> próprias dentro de `emails/`, seguindo o mesmo padrão.
 
 ## Resumo do problema corrigido
 
