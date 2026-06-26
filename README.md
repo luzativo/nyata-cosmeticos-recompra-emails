@@ -7,8 +7,13 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
 - **[`PADRAO-EMAILS-MOBILE.md`](PADRAO-EMAILS-MOBILE.md)** — padrão de
   legibilidade no celular. Explica por que a fonte ficava pequena no mobile e
   define os tamanhos mínimos e a estrutura HTML a seguir em todos os e-mails.
-- **[`emails/oleo-reparador.html`](emails/oleo-reparador.html)** — modelo de
-  referência (Óleo Reparador Amor Crescido) já corrigido conforme o padrão.
+- **E-mails da série** (em `emails/`), todos no padrão:
+  - [`nyata-email-01-boas-vindas-oleo-reparador.html`](emails/nyata-email-01-boas-vindas-oleo-reparador.html)
+    — E-mail 01 · Boas-vindas Óleo Reparador (modelo de referência).
+  - [`nyata-email-02-passo-antes-do-oleo-manteiga.html`](emails/nyata-email-02-passo-antes-do-oleo-manteiga.html)
+    — E-mail 02 · Passo antes do óleo (Manteiga).
+  - [`nyata-email-03-cross-sell-manteiga-nutritiva.html`](emails/nyata-email-03-cross-sell-manteiga-nutritiva.html)
+    — E-mail 03 · Cross-sell Manteiga Nutritiva.
 
 ## Resumo do problema corrigido
 
