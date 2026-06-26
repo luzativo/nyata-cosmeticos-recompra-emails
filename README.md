@@ -28,6 +28,8 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
     — E-mail 09 · Cross-sell Leave-in Defrizante.
   - [`nyata-email-10-cronograma-capilar.html`](emails/nyata-email-10-cronograma-capilar.html)
     — E-mail 10 · Cronograma capilar.
+  - [`nyata-email-11-escuta-e-comunidade.html`](emails/nyata-email-11-escuta-e-comunidade.html)
+    — E-mail 11 · Escuta e comunidade (sem venda).
 
 ## Resumo do problema corrigido
 
