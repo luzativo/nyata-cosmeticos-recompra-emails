@@ -22,6 +22,8 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
     — E-mail 06 · Vegana e Low/No Poo.
   - [`nyata-email-07-recompra-ciclo-oleo.html`](emails/nyata-email-07-recompra-ciclo-oleo.html)
     — E-mail 07 · Recompra ciclo (Óleo).
+  - [`nyata-email-08-recompra-fechamento-oleo.html`](emails/nyata-email-08-recompra-fechamento-oleo.html)
+    — E-mail 08 · Recompra fechamento (Óleo).
 
 ## Resumo do problema corrigido
 
