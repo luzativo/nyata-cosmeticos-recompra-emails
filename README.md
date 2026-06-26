@@ -24,6 +24,8 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
     — E-mail 07 · Recompra ciclo (Óleo).
   - [`nyata-email-08-recompra-fechamento-oleo.html`](emails/nyata-email-08-recompra-fechamento-oleo.html)
     — E-mail 08 · Recompra fechamento (Óleo).
+  - [`nyata-email-09-cross-sell-leave-in.html`](emails/nyata-email-09-cross-sell-leave-in.html)
+    — E-mail 09 · Cross-sell Leave-in Defrizante.
 
 ## Resumo do problema corrigido
 
