@@ -137,7 +137,7 @@ depender de media query** (Gmail app a ignora), faça-o **estruturalmente**:
 cada item em sua própria linha de uma tabela, com estilo inline.
 
 ```html
-<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
   <tr>
     <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; color:#5A7A2E; font-weight:bold; letter-spacing:0.5px; padding:4px 0;">
       <span style="color:#8DC542;">&#10003;</span>&nbsp; Vegano
@@ -147,6 +147,9 @@ cada item em sua própria linha de uma tabela, com estilo inline.
 </table>
 ```
 
+A tabela ocupa **100% da largura** e cada `td` usa `align="center"`, então
+cada selo fica **centralizado na área inteira do e-mail** — não dependa de
+`margin:0 auto`/`align="center"` na tabela, que o Gmail app não centraliza.
 Assim cada selo fica numa linha em **todos** os clientes (inclusive Gmail app).
 No desktop também ficam empilhados — em 3 linhas centralizadas fica limpo e
 intencional, e dá mais destaque a cada atributo.
