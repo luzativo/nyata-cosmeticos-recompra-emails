@@ -46,6 +46,14 @@ Pasta: [`emails/recompra-shampoo-amor-crescido/`](emails/recompra-shampoo-amor-c
   — E-mail 01 · Boas-vindas e como usar (Shampoo).
 - [`nyata-email-02-passo-depois-condicionador.html`](emails/recompra-shampoo-amor-crescido/nyata-email-02-passo-depois-condicionador.html)
   — E-mail 02 · O passo depois (preparo p/ Condicionador).
+- [`nyata-email-03-condicionador-cowash.html`](emails/recompra-shampoo-amor-crescido/nyata-email-03-condicionador-cowash.html)
+  — E-mail 03 · Condicionador + Co-Wash.
+- [`nyata-email-04-finalizacao-defina-cacho.html`](emails/recompra-shampoo-amor-crescido/nyata-email-04-finalizacao-defina-cacho.html)
+  — E-mail 04 · Finalização: defina seu cacho.
+- [`nyata-email-05-pertencimento-low-no-poo.html`](emails/recompra-shampoo-amor-crescido/nyata-email-05-pertencimento-low-no-poo.html)
+  — E-mail 05 · Pertencimento Low e No Poo.
+- [`nyata-email-06-cronograma-mascara-hidratante.html`](emails/recompra-shampoo-amor-crescido/nyata-email-06-cronograma-mascara-hidratante.html)
+  — E-mail 06 · Cronograma + Máscara Hidratante.
 
 > Cada nova leva entra em sua própria pasta dentro de `emails/`, seguindo o
 > mesmo padrão (ver `PADRAO-EMAILS-MOBILE.md`).
