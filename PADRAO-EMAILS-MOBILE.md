@@ -111,6 +111,33 @@ Uso nos elementos (mantenha **sempre** o `style` inline + a classe):
 
 ---
 
+## Listas em linha que quebram feio no celular (ex.: selos)
+
+Trechos como `✓ Vegano · ✓ Liberado para Low Poo e No Poo · ✓ Sem sulfatos`
+ficam bem numa linha só no PC, mas quebram em pontos esquisitos no celular.
+A solução é deixá-los **lado a lado no desktop e um por linha no mobile**.
+
+Envolva cada item num `span.selo` e cada separador num `span.selo-sep`
+(sem espaços/quebras entre os spans, para não criar buracos no desktop):
+
+```html
+<p class="text-selos" style="...">
+  <span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Vegano</span><span class="selo-sep">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span><span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Liberado para Low Poo e No Poo</span><span class="selo-sep">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span><span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Sem sulfatos</span>
+</p>
+```
+
+E na media query, vire os itens em bloco e esconda os separadores:
+
+```css
+.selo     { display: block !important; padding: 5px 0 !important; }
+.selo-sep { display: none !important; }
+```
+
+No desktop os `span` ficam inline (uma linha, com `·`); no mobile cada selo
+vira um bloco (linha própria) e os `·` somem.
+
+---
+
 ## Como aplicar à série inteira
 
 Para cada e-mail da série:
