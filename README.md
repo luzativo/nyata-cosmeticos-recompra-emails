@@ -44,6 +44,8 @@ Pasta: [`emails/recompra-shampoo-amor-crescido/`](emails/recompra-shampoo-amor-c
 
 - [`nyata-email-01-boas-vindas-shampoo.html`](emails/recompra-shampoo-amor-crescido/nyata-email-01-boas-vindas-shampoo.html)
   — E-mail 01 · Boas-vindas e como usar (Shampoo).
+- [`nyata-email-02-passo-depois-condicionador.html`](emails/recompra-shampoo-amor-crescido/nyata-email-02-passo-depois-condicionador.html)
+  — E-mail 02 · O passo depois (preparo p/ Condicionador).
 
 > Cada nova leva entra em sua própria pasta dentro de `emails/`, seguindo o
 > mesmo padrão (ver `PADRAO-EMAILS-MOBILE.md`).
