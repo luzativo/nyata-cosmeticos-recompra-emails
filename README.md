@@ -14,6 +14,8 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
     — E-mail 02 · Passo antes do óleo (Manteiga).
   - [`nyata-email-03-cross-sell-manteiga-nutritiva.html`](emails/nyata-email-03-cross-sell-manteiga-nutritiva.html)
     — E-mail 03 · Cross-sell Manteiga Nutritiva.
+  - [`nyata-email-04-prova-social-e-identidade.html`](emails/nyata-email-04-prova-social-e-identidade.html)
+    — E-mail 04 · Prova social e identidade.
 
 ## Resumo do problema corrigido
 
