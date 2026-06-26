@@ -111,30 +111,45 @@ Uso nos elementos (mantenha **sempre** o `style` inline + a classe):
 
 ---
 
+## ⚠️ Importante: o app do Gmail ignora o bloco `<style>`
+
+O **app do Gmail (Android/iOS), sobretudo com contas que não são @gmail**
+(contas IMAP/empresariais adicionadas ao app), **ignora todo o `<style>` do
+`<head>` — inclusive as media queries.** Ou seja, naquele ambiente:
+
+- O aumento de fonte da media query (regra 3) **não é aplicado**.
+- Qualquer `display:block` / `display:none` de media query **não funciona**.
+
+Por isso o que é **crítico precisa estar em estilo inline e na estrutura**:
+
+- O container fluido (regra 1) funciona porque o `width:100%; max-width:600px`
+  é **inline** — foi ele que resolveu a fonte pequena (impede o zoom-out).
+- Os tamanhos de fonte **inline** (regra 2) devem ser, por si só, legíveis no
+  celular — não conte com a media query para aumentá-los. A media query é um
+  **reforço** para os clientes que a suportam (Apple Mail, Gmail com conta
+  Google, etc.), não a base.
+
 ## Listas em linha que quebram feio no celular (ex.: selos)
 
 Trechos como `✓ Vegano · ✓ Liberado para Low Poo e No Poo · ✓ Sem sulfatos`
-ficam bem numa linha só no PC, mas quebram em pontos esquisitos no celular.
-A solução é deixá-los **lado a lado no desktop e um por linha no mobile**.
-
-Envolva cada item num `span.selo` e cada separador num `span.selo-sep`
-(sem espaços/quebras entre os spans, para não criar buracos no desktop):
+quebram em pontos esquisitos no celular. Como o empilhamento **não pode
+depender de media query** (Gmail app a ignora), faça-o **estruturalmente**:
+cada item em sua própria linha de uma tabela, com estilo inline.
 
 ```html
-<p class="text-selos" style="...">
-  <span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Vegano</span><span class="selo-sep">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span><span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Liberado para Low Poo e No Poo</span><span class="selo-sep">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span><span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Sem sulfatos</span>
-</p>
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;">
+  <tr>
+    <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; color:#5A7A2E; font-weight:bold; letter-spacing:0.5px; padding:4px 0;">
+      <span style="color:#8DC542;">&#10003;</span>&nbsp; Vegano
+    </td>
+  </tr>
+  <!-- uma <tr> por selo: Liberado para Low Poo e No Poo / Sem sulfatos -->
+</table>
 ```
 
-E na media query, vire os itens em bloco e esconda os separadores:
-
-```css
-.selo     { display: block !important; padding: 5px 0 !important; }
-.selo-sep { display: none !important; }
-```
-
-No desktop os `span` ficam inline (uma linha, com `·`); no mobile cada selo
-vira um bloco (linha própria) e os `·` somem.
+Assim cada selo fica numa linha em **todos** os clientes (inclusive Gmail app).
+No desktop também ficam empilhados — em 3 linhas centralizadas fica limpo e
+intencional, e dá mais destaque a cada atributo.
 
 ---
 

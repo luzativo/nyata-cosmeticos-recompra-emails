@@ -115,16 +115,6 @@
           line-height: 22px !important;
         }
 
-        /* Selos: cada um em sua própria linha no celular */
-        .selo {
-          display: block !important;
-          padding: 5px 0 !important;
-        }
-
-        .selo-sep {
-          display: none !important;
-        }
-
         /* Rodapé */
         .text-footer {
           font-size: 14px !important;
@@ -320,9 +310,24 @@
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                   <tr>
                     <td align="center" style="border-top:1px solid #EEEEEE; padding-top:22px;">
-                      <p class="text-selos" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:20px; color:#5A7A2E; font-weight:bold; letter-spacing:0.5px;">
-                        <span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Vegano</span><span class="selo-sep">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span><span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Liberado para Low Poo e No Poo</span><span class="selo-sep">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span><span class="selo"><span style="color:#8DC542;">&#10003;</span>&nbsp; Sem sulfatos</span>
-                      </p>
+                      <!-- Selos empilhados via estrutura (1 por linha), sem depender de media query -->
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;">
+                        <tr>
+                          <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; color:#5A7A2E; font-weight:bold; letter-spacing:0.5px; padding:4px 0;">
+                            <span style="color:#8DC542;">&#10003;</span>&nbsp; Vegano
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; color:#5A7A2E; font-weight:bold; letter-spacing:0.5px; padding:4px 0;">
+                            <span style="color:#8DC542;">&#10003;</span>&nbsp; Liberado para Low Poo e No Poo
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; color:#5A7A2E; font-weight:bold; letter-spacing:0.5px; padding:4px 0;">
+                            <span style="color:#8DC542;">&#10003;</span>&nbsp; Sem sulfatos
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
