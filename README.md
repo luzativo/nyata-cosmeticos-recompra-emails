@@ -4,9 +4,15 @@ Série de e-mails de recompra/pós-venda usados no RD Marketing.
 
 ## Conteúdo
 
+- **[`.claude/skills/rd-station-emails/SKILL.md`](.claude/skills/rd-station-emails/SKILL.md)**
+  — **Skill universal** (base de conhecimento + checklist) para criar/revisar
+  qualquer e-mail de RD Station, em qualquer projeto. É a fonte única de regras
+  (estrutura, tipografia, layout, imagens, CTAs, links, copy anti-spam,
+  entregabilidade, erros conhecidos, checklist). Para usar em todos os clientes,
+  copie a pasta para `~/.claude/skills/`.
 - **[`PADRAO-EMAILS-MOBILE.md`](PADRAO-EMAILS-MOBILE.md)** — padrão de
-  legibilidade no celular. Explica por que a fonte ficava pequena no mobile e
-  define os tamanhos mínimos e a estrutura HTML a seguir em todos os e-mails.
+  legibilidade no celular (subconjunto histórico, específico desta série). A
+  Skill acima generaliza e amplia este documento.
 As campanhas ficam em `emails/`, cada leva em sua própria pasta.
 
 ### Leva 1 — Recompra do Óleo Reparador (linha Amor Crescido)
